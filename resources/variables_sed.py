@@ -1,0 +1,5 @@
+sed_general='^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2},[0-9]{3} INFO - hash=[0-9]+ threadid=[0-9]+ threads=[0-9]+ [0-9*]{1,3}.[0-9*]{1,3}.[0-9*]{1,3}.[0-9*]{1,3} method=GET | latency=[0-9]+| cputime=[0-9]+| size=[0-9]+| rc=[0-9]+| currency=[a-z]{3}|&*apiversion=[0-9.]+|&*currency=[A-Z]{3}|&*gpgameid=[A-Za-z0-9]+|&*gpid=[0-9]+|&*opid=[0-9]+|&*playerip=([0-9*]{1,3}.[0-9*]{1,3}.[0-9*]{1,3}.[0-9*]{1,3}|$)|&*playerip=|&*sessionid=[A-Za-z0-9:_-]+|&*device=desktop|&*request=[a-z]+|&*device=mobile'
+sed_getaccount=' country=[a-z]{3}| accountid=[a-zA-Z0-9_-]+|&*lang=[a-z_]+'
+sed_getbalance=' balance=[0-9.]+| realbalance=[0-9.]+| bonusbalance=[0-9.]+|&*accountid=[a-zA-Z0-9_-]+'
+sed_wager=' balance=[0-9.]+| realbalance=[0-9.]+| bonusbalance=[0-9.]+| realmoneybet=[0-9.]+| bonusmoneybet=[0-9.]+|&*accountid=[a-zA-Z0-9_-]+|&*roundid=[0-9]+|&*transactionid=[0-9]+|&*betamount=[0-9.]+'
+sed_result=' balance=[0-9.]+| realbalance=[0-9.]+| bonusbalance=[0-9.]+|&*accountid=[a-zA-Z0-9_-]+|&*roundid=[0-9]+|&*transactionid=[0-9]+|&*wonamount=[0-9.]+|&*gamestatus=completed|&*gamestatus=pending|&*gamedetails='

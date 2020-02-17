@@ -1,0 +1,3 @@
+for file in `ls`; do ./$file >> proc.txt; done
+kill -9 $(cat proc.txt); rm proc.txt
+google-chrome $(./build_url.sh -s 495b091d-73e0-4cbf-8457-95a283910a3b -g 70233 -o 5 -m real -d desktop -c SEK -l en_gb)
